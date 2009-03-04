@@ -13,7 +13,7 @@ Both XHTML and hAtom suggestion are filtered while the user types. Current versi
 
 ==Code Highlight==
 
-The default color for hAtom keywords highlight is crimson. This setting can be changed using the dedicated Preferences item in&nbsp; *Window > Preferences > Hatom Editor*, where the following preferences can be edited:
+The default color for hAtom keywords highlight is crimson. This setting can be changed using the dedicated Preferences item in *Window > Preferences > Hatom Editor*, where the following preferences can be edited:
 * hAtom keyword color
 * XML string (attribute values that are NOT hAtom keywords)
 * XHTML tags
@@ -25,9 +25,7 @@ The default color for hAtom keywords highlight is crimson. This setting can be c
 
 ==Validation==
 
-\\
-
-Hatom validation process is started by clicking the button with the microformats icon on the main toolbar. !https://forge.pronetics.it/confluence/download/attachments/7536709/hatomButton.png!
+Hatom validation process is started by clicking the button with the microformats icon on the main toolbar. [http://eclipse-hatom-plugin.googlecode.com/svn/wiki/images/hatomButton.png http://eclipse-hatom-plugin.googlecode.com/svn/wiki/images/hatomButton.png]
 
 For every file to be validated, a new output tab is opened, as shown in the picture below. Error reports can be explored using the down and up arrows placed on the upper-right corner of the validation view. The currently selected report is highlighted in blue. Every error report item is a row in the view, and shows
 * the error message
