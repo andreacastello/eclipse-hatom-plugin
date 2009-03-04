@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: eclipse-hatom-plugin
 Bundle-SymbolicName: it.pronetics.madstore.hatom.eclipse.HatomPlugin; singleton:=true
-Bundle-Version: 1.0.0
+Bundle-Version: 0.1.0
 Bundle-Activator: it.pronetics.madstore.hatom.eclipse.HatomActivator
 Bundle-Vendor: Pronetics
 Require-Bundle: org.eclipse.ui,
