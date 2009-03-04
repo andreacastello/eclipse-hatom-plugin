@@ -1,0 +1,40 @@
+#labels Phase-Support
+This page is an overview of implemented features in the *hAtom plugin for Eclipse 3.4 (Ganymede)*.
+
+==Code completion==
+
+Completion (or Code Assist in Eclipse docs), has been written from scratch to handle XHTML 1.0 tags and hAtom microformats separately. Code assist is activated with a CTRL+SPACE shortcut; a popup containing either XHTML tags or hAtom keywords is opened. XHTML tags are shown whenever the editor cursor is placed in a XHTML tag part that is _not_ an attribute value. When cursor is placed inside an attribute value, hAtom completion is performed. No completion popup is opened inside comments or processing instruction tags.
+
+
+[http://eclipse-hatom-plugin.googlecode.com/svn/wiki/images/Eclipse_codeassist_001.png http://eclipse-hatom-plugin.googlecode.com/svn/wiki/images/Eclipse_codeassist_001.png]
+
+
+Both XHTML and hAtom suggestion are filtered while the user types. Current version does not support Documentation assist (as happens in Netbeans plugin).
+
+==Code Highlight==
+
+The default color for hAtom keywords highlight is crimson. This setting can be changed using the dedicated Preferences item in&nbsp; *Window > Preferences > Hatom Editor*, where the following preferences can be edited:
+* hAtom keyword color
+* XML string (attribute values that are NOT hAtom keywords)
+* XHTML tags
+* XML processing instruction
+
+* XHTML DOCTYPE declaration
+
+[http://eclipse-hatom-plugin.googlecode.com/svn/wiki/images/Eclipse_hatom_prefs_001.png http://eclipse-hatom-plugin.googlecode.com/svn/wiki/images/Eclipse_hatom_prefs_001.png]
+
+==Validation==
+
+\\
+
+Hatom validation process is started by clicking the button with the microformats icon on the main toolbar. !https://forge.pronetics.it/confluence/download/attachments/7536709/hatomButton.png!
+
+For every file to be validated, a new output tab is opened, as shown in the picture below. Error reports can be explored using the down and up arrows placed on the upper-right corner of the validation view. The currently selected report is highlighted in blue. Every error report item is a row in the view, and shows
+* the error message
+* the complete node that contains the error
+* the path of the wrong node tag (if available) with the following form: _html > body > div_
+* the total number of errors occurred
+
+[http://eclipse-hatom-plugin.googlecode.com/svn/wiki/images/Eclipse_validator_001.png http://eclipse-hatom-plugin.googlecode.com/svn/wiki/images/Eclipse_validator_001.png]
+
+Note that the current version +supports only one validation at the time+, every new validation task must wait for a previous validation to end before it could be started. 
