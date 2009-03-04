@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: eclipse-hatom-plugin
+Bundle-SymbolicName: it.pronetics.madstore.hatom.eclipse.HatomPlugin; singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: it.pronetics.madstore.hatom.eclipse.HatomActivator
+Bundle-Vendor: Pronetics
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ActivationPolicy: lazy
