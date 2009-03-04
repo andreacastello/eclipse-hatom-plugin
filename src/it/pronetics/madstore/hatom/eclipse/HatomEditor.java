@@ -1,18 +1,19 @@
-/*
- * ---------------------------------------------------------------------------------
- * HatomEditor.java - History of changes
- * ---------------------------------------------------------------------------------
- * 23/10/2008 - 1.0: First implementation
- * 31/10/2008 - 1.1: Added unrecoverable exception handling
- * 03/11/2008 - 1.2: Overridden createActions()
- * 05/11/2008 - 1.3: Added setupPreferredValues
- * 06/11/2008 - 1.4: Minor changes in setupPreferredValues()
- * 07/11/2008 - 1.5: Changed  hatomView.printReports method invocation
- * 24/11/2008 - 1.6: Modified run(IAction action): now created multiple instances of
- * 					 HatomEditorView.
- * 16/01/2008 - 1.7: Rollback to version 1.6 run(IAction action) recycles a single instance
- *                   of HatomEditorView.
+/**
+ * Copyright 2008 - 2009 Pro-Netics S.P.A.
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
  */
+
 package it.pronetics.madstore.hatom.eclipse;
 
 import it.pronetics.madstore.hatom.eclipse.editor.ColorManager;
@@ -160,7 +161,7 @@ public class HatomEditor extends TextEditor implements IEditorActionDelegate {
     @Override
     protected void createActions() {
 
-        ResourceBundle bundle = ResourceBundle.getBundle("it.pronetics.madstore.hatom.utils.assist");
+        ResourceBundle bundle = ResourceBundle.getBundle("it.pronetics.madstore.hatom.eclipse.utils.assist");
         IAction action = new ContentAssistAction(bundle, "ContentAssistProposal.", this);
         action.setActionDefinitionId(ITextEditorActionDefinitionIds.CONTENT_ASSIST_PROPOSALS);
         setAction("ContentAssistProposal", action);

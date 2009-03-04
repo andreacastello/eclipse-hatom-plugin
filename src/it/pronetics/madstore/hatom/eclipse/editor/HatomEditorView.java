@@ -1,14 +1,17 @@
-/*
- * ---------------------------------------------------------------------------------
- * HatomEditorView.java - History of changes
- * ---------------------------------------------------------------------------------
- * 23/10/2008 - 1.0 - First implementation
- * 31/10/2008 - 1.1 - Removed unused imports.
- * 07/11/2008 - 1.2:  Changed printReports signature: now it accepts also a TimeMeasurer object
- * 24/11/2008 - 1.3:  Added progressiveViewId and getProgressiveViewId() in order 
- * 				 	  to allow creating multiple instance of this view.
- * 16/01/2008 - 1.4:  Rollback to version 1.2. The view is single-instance and recycled for any new
- *                    validation task.
+/**
+ * Copyright 2008 - 2009 Pro-Netics S.P.A.
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
  */
 package it.pronetics.madstore.hatom.eclipse.editor;
 
@@ -30,7 +33,7 @@ import it.pronetics.madstore.hatom.eclipse.validator.TimeMeasurer;
 public class HatomEditorView extends ViewPart {
 
     // Static View ID
-    public static final String ID = "it.pronetics.madstore.hatom.HatomEditorView";
+    public static final String ID = "it.pronetics.madstore.hatom.eclipse.HatomEditorView";
 
     // Progressive ID used to create multiple instances of this view
     // private static int progressiveViewId = 0;

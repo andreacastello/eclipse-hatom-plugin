@@ -1,13 +1,17 @@
-/*
- * ---------------------------------------------------------------------------------
- * ElementCache.java - History of changes
- * ---------------------------------------------------------------------------------
- * 03/09/2008 - 1.0: First implementation.
- * 03/11/2008 - 1.1: Port from Netbeans to Eclipse RCP
- * 06/11/2008 - 1.2: Output tag list has been made unmodifiable.
- * 07/11/2008 - 1.3: Modified exception handling: now it writes on Eclipse Error Log.
- * 24/11/2008 - 1.4: Renamed to from TagCache to ElementCache: now handles both HAtom keywords and
- *                   XHTML 1.0 tags.
+/**
+ * Copyright 2008 - 2009 Pro-Netics S.P.A.
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
  */
 package it.pronetics.madstore.hatom.eclipse.utils;
 
@@ -31,7 +35,7 @@ import org.eclipse.core.runtime.Status;
 public class ElementCache {
 
     // Path of the properties file where hAtom keywords are stored.
-    private final static String PROPERTIES_CPATH = "it.pronetics.madstore.hatom.utils.tags";
+    private final static String PROPERTIES_CPATH = "it.pronetics.madstore.hatom.eclipse.utils.tags";
     // Used to access the module properties file.<br>
     private ResourceBundle bundle = null;
     // Hatom Keywords list.
