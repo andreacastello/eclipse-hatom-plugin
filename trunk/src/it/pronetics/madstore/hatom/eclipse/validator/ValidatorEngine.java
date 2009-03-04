@@ -1,17 +1,17 @@
-/*
- * ---------------------------------------------------------------------------------
- * ValidatorEngine.java - History of changes
- * ---------------------------------------------------------------------------------
- * 15/09/2008 - 1.0: First implementation.
- * 16/09/2008 - 1.1: Delegated xml parse and rule object creation to RuleBuilder class 
- *                   where Document object has been moved.
- * 16/09/2008 - 1.2: Added methods getRule(String) and validate().
- * 23/09/2008 - 1.3: Logic rewritten.
- * 06/10/2008 - 1.4: Removed NodeMetadata references: used Node instead
- * 04/12/2008 - 1.5: checkInvalidHatomAttributes method has been splitted in two methods in order
- *                   to reduce its cyclomatic complexity.
- * 10/12/2008 - 1.6: Moved ALL_KEYWORDS from HentryChildAnalyzer, it replaces hAtomKeywords.
- * 					 Modified both analyzeUnmatchingNodes methods to receive an array of keywords to be chacked.
+/**
+ * Copyright 2008 - 2009 Pro-Netics S.P.A.
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
  */
 
 package it.pronetics.madstore.hatom.eclipse.validator;

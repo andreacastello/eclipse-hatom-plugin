@@ -1,13 +1,17 @@
-/*
- * ---------------------------------------------------------------------------------
- * HatomKeywordAssistProcessor.java - History of changes
- * ---------------------------------------------------------------------------------
- * 03/11/2008 - 1.0: First commented implementation
- * 07/11/2008 - 1.1: Modifies exception handling: nowit writes on Eclipse Error log
- * 11/11/2008 - 1.2: Removed redundant variable usage
- * 24/11/2008 - 1.3: Handled XHTML tags and hAtom keyword in two different list that are
- *                   used in selected parts of the document.
- * 16/01/2009 - 1.4: Solved bug of autocompletion keyword insertion.
+/**
+ * Copyright 2008 - 2009 Pro-Netics S.P.A.
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
  */
 package it.pronetics.madstore.hatom.eclipse.editor.completion;
 

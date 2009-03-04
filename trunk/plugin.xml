@@ -8,22 +8,22 @@
             extensions="xhtml,html"
             icon="icons/hatomValidate.png"
             contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
-            class="it.pronetics.madstore.hatom.HatomEditor"
-            id="it.pronetics.madstore.hatom.editor.HatomEditor">
+            class="it.pronetics.madstore.hatom.eclipse.HatomEditor"
+            id="it.pronetics.madstore.hatom.eclipse.editor.HatomEditor">
       </editor>
    </extension>
    
    <!-- This view is an output tab -->
    <extension point="org.eclipse.ui.views">
    	  <category
-            id="it.pronetics.madstore.hatom"
+            id="it.pronetics.madstore.hatom.eclipse"
             name="Hatom Editor View">
    	  </category>
       <view
             allowMultiple="false"
-            class="it.pronetics.madstore.hatom.editor.HatomEditorView"
+            class="it.pronetics.madstore.hatom.eclipse.editor.HatomEditorView"
             icon="icons/hatomValidate.png"
-            id="it.pronetics.madstore.hatom.HatomEditorView"
+            id="it.pronetics.madstore.hatom.eclipse.HatomEditorView"
             name="Hatom Editor View"
             restorable="true">
       </view>
@@ -32,11 +32,11 @@
    <extension point="org.eclipse.ui.viewActions">
    
    		<viewContribution 
-   			id="it.pronetics.madstore.hatom.Up" 
-   		    targetID="it.pronetics.madstore.hatom.HatomEditorView">
+   			id="it.pronetics.madstore.hatom.eclipse.Up" 
+   		    targetID="it.pronetics.madstore.hatom.eclipse.HatomEditorView">
    			<action
-           		class="it.pronetics.madstore.hatom.editor.ReportScrollAction"
-           		id="it.pronetics.madstore.hatom.ReportScrollAction.Up"
+           		class="it.pronetics.madstore.hatom.eclipse.editor.ReportScrollAction"
+           		id="it.pronetics.madstore.hatom.eclipse.ReportScrollAction.Up"
            		label="Scroll Up"
            		icon="icons/arrow_up.gif"
            		toolbarPath="Scroll"
@@ -45,11 +45,11 @@
    		</viewContribution>
    		
    		<viewContribution 
-   			id="it.pronetics.madstore.hatom.Down" 
-   		    targetID="it.pronetics.madstore.hatom.HatomEditorView">
+   			id="it.pronetics.madstore.hatom.eclipse.Down" 
+   		    targetID="it.pronetics.madstore.hatom.eclipse.HatomEditorView">
    			<action
-           		class="it.pronetics.madstore.hatom.editor.ReportScrollAction"
-           		id="it.pronetics.madstore.hatom.ReportScrollAction.Down"
+           		class="it.pronetics.madstore.hatom.eclipse.editor.ReportScrollAction"
+           		id="it.pronetics.madstore.hatom.eclipse.ReportScrollAction.Down"
            		label="Scroll Down"
            		toolbarPath="Scroll"
            		icon="icons/arrow_down.gif"
@@ -62,21 +62,21 @@
    <!-- Item in the main toolbar --> 
    <extension point="org.eclipse.ui.editorActions">
        <editorContribution 
-         id="it.pronetics.madstore.hatom.editor.HatomEditor" 
-         targetID="it.pronetics.madstore.hatom.editor.HatomEditor">        
-	   <action id="it.pronetics.madstore.hatom.editor.HatomEditor" 
+         id="it.pronetics.madstore.hatom.eclipse.editor.HatomEditor" 
+         targetID="it.pronetics.madstore.hatom.eclipse.editor.HatomEditor">        
+	   <action id="it.pronetics.madstore.hatom.eclipse.editor.HatomEditor" 
               label="hAtom Validator" 
               toolbarPath="HatomEditor" 
               icon="icons/hatomValidate.png" 
               tooltip="Validate hAtom microformat" 
-              class="it.pronetics.madstore.hatom.HatomEditor"
+              class="it.pronetics.madstore.hatom.eclipse.HatomEditor"
               /> 
       </editorContribution>
    </extension>
    
    <!-- Prefernce page for hAtom in the main preferences Window -->
    <extension point="org.eclipse.ui.preferencePages">
-      <page class="it.pronetics.madstore.hatom.prefs.PreferencesPage"
+      <page class="it.pronetics.madstore.hatom.eclipse.prefs.PreferencesPage"
             id="HatomPlugin.PrefPage1"
             name="Hatom Editor">
       </page>
