@@ -30,4 +30,4 @@ public ICompletionProposal[] computeCompletionProposals(ITextViewer viewer, int 
 
 which takes care of retrival, selection and filtering of the completion items, which are return as an array of ICompletionProposal.
 
-Eclipse infrastructure divides a text document into partitions; each is associated with a sort of "content-type", which describes its identity and properties. Ie: an XML document can be divided into  "XML comment" partitions, "Processing instruction" partitions, and so on. A list of partitions defined for the hAtom compliant XHTML documents is available in the syntax highlight document. 
+Eclipse infrastructure divides a text document into partitions; each is associated with a sort of "content-type", which describes its identity and properties. Ie: an XML document can be divided into  "XML comment" partitions, "Processing instruction" partitions, and so on. A list of partitions defined for the hAtom compliant XHTML documents is available in the [http://code.google.com/p/eclipse-hatom-plugin/wiki/hAtom_syntax_highlight syntax highlight document]. 
